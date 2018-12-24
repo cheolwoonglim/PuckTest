@@ -4,8 +4,9 @@
  <body>
   <script src="https://www.puck-js.com/puck.js"></script>
   <script type="text/javascript">
+     Puck.eval('E.getTemperature()',function(d){console.log(d);});
    setInterval(function(){
-     Puck.eval('E.getTemperature()',function(d){console.log(d);})
+     Puck.eval('E.getTemperature()',function(d){console.log(d);});
    }, 1000);
   <!--button onclick="Puck.write('LED1.set();\n');">Read!</button-->
  </body>
