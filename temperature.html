@@ -8,6 +8,6 @@
 Puck.eval('E.getTemperature()',function(d){console.log(d);});
   </script-->
   <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
-  <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById("temp").write(d);});}, 1000);">Keep reading!!</button>
+  <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById('temp').write(d);});}, 1000);">Keep reading!!</button>
  </body>
 </html>
