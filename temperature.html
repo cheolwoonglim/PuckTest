@@ -12,7 +12,7 @@
   <button onclick="Puck.write('LED1.reset();\n');">Off1!</button>
   <button onclick="Puck.write('LED1.reset();\n');">Off2!</button>
   <button onclick="Puck.write('LED1.reset();\n');">Off3!</button>
-  <button onclick="Puck.eval('E.getTemperature();\n',function(d){console.log(d);});">Read!</button>
+  <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
   <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
  </body>
 </html>
