@@ -3,7 +3,7 @@
  </head>
  <body>
   <script src="https://www.puck-js.com/puck.js"></script>
-  <font size=180><span id='temp'>0</span> degree</font>
+  <font size=180><span id='temp'></span> degree</font>
   <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
   <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById('temp').innerHTML=d;});}, 1000);">Keep reading!!</button>
   <br>
