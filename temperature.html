@@ -5,7 +5,7 @@
   <script src="https://www.puck-js.com/puck.js"></script>
   <span id='temp'>0</span> degree
   <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
-  <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById('temp').innerHTML=<font size=180>d</font>;});}, 1000);">Keep reading!!</button>
+  <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById('temp').innerHTML='<font size=180>d</font>';});}, 1000);">Keep reading!!</button>
   <br>
   <center>
   </center>
