@@ -2,12 +2,9 @@
  <head>
  </head>
  <body>
-  <font size=60><span id='temp'>0</span> degree</font>
   <script src="https://www.puck-js.com/puck.js"></script>
-  <!--script type="text/javascript">
-Puck.eval('E.getTemperature()',function(d){console.log(d);});
-  </script-->
   <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
   <button onclick="setInterval(function(){ Puck.eval('E.getTemperature()',function(d){document.getElementById('temp').innerHTML=d;});}, 1000);">Keep reading!!</button>
+  <font size=180><span id='temp'>0</span> degree</font>
  </body>
 </html>
