@@ -9,6 +9,7 @@
      Puck.eval('E.getTemperature()',function(d){console.log(d);});
    }, 1000);
   </script-->
-  <button onclick="Puck.eval('E.getTemperature()',function(d){console.log(d);});">Read!</button>
+  <button onclick="Puck.write('LED1.reset();\n');">Off!</button>
+  <button onclick="Puck.eval('E.getTemperature();',function(d){console.log(d);});">Read!</button>
  </body>
 </html>
